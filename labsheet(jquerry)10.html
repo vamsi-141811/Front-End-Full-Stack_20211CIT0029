@@ -1,0 +1,43 @@
+<!-- create a webpage that displays multiple elements, such as text, images or buttons, and implements functionality to apply fading effects
+on these elements using jquery. the user should be able to trigger the effects by clicking on designated buttons or links on the page.
+the fading effects should include fade in, fade out, and fade toggle, and should have customizable speed and easing options. the program
+should also handle multiple simultaneous fades and be compatible with different browsers and screen sizes. -->
+
+<html>
+    <head>
+        <script src="jquery-3.6.3.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $('#btn1').click(function()
+                {
+                    $('#div1').fadeIn(2000);
+                    $('#div2').fadeIn(4000);
+                    $('#div3').fadeIn(6000);
+                })
+                $('#btn2').click(function()
+                {
+                    $('#div1').fadeOut(2000);
+                    $('#div2').fadeOut(4000);
+                    $('#div3').fadeOut(6000);
+                })
+                $('#btn3').click(function()
+                {
+                    $('#div1').fadeToggle(2000);
+                    $('#div2').fadeToggle(4000);
+                    $('#div3').fadeToggle(6000);
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <p>fade with different paramaters.</p>
+        <button id="btn1">Fade In</button>
+        <button id="btn2">Fade Out</button>
+        <button id="btn3">Fade Toggle</button>
+        <div id="div1" style="width:80px;height: 80px;background-color: red;"></div><br>
+        <div id="div2" style="width:80px;height: 80px;background-color: green;"></div><br>
+        <div id="div3" style="width:80px;height: 80px;background-color: blue;"></div><br>
+    </body>
+</html>

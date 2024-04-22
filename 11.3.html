@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <div data-ng-app=""data-ng-init="quantity=9;price=125">
+        <h2>CostCalculator</h2>
+        Quantity:<input type="number"ng-model="quantity">
+        Price:<input type="number" ng-model="price">
+        <p><b>Total in rupees:</b>{{quantity*price}}</p>
+    </div>
+    
+</body>
